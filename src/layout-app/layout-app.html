@@ -1,0 +1,64 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../../bower_components/app-route/app-location.html">
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../../bower_components/iron-selector/iron-selector.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+
+<dom-module id="layout-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      app-header {
+        background-color: blueviolet;
+      }
+      app-header-layout, .main{
+        background-color: rgb(178, 243, 243);
+      }
+    </style>
+    
+    <app-header-layout fullbleed>
+      <app-header slot="header" condenses effects="waterfall">
+        <app-toolbar>
+          <div main-title>App name</div>
+        </app-toolbar>
+      </app-header>
+      <div class="main">
+        main content
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quod omnis eveniet recusandae error ratione voluptatem, corporis magnam similique. Placeat, tempora temporibus autem labore blanditiis voluptatum cum ab facere perspiciatis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae odit, nobis distinctio praesentium sed cumque facere, perspiciatis est exercitationem debitis tempore quia porro quibusdam itaque qui ratione iusto sapiente repellendus.</p>
+        <p>Laudantium ad reiciendis quos natus nulla neque voluptatibus ipsam porro voluptatem. Reprehenderit libero, in incidunt dolore dolorem perspiciatis necessitatibus modi nam labore pariatur impedit corrupti rerum amet esse itaque culpa!</p>
+        <p>Id aut, veniam exercitationem autem soluta, doloremque molestias cumque saepe dolorem, dolores eius repellendus. Sequi illo, aut repellat dicta iste quibusdam itaque ullam, aperiam nemo perferendis veritatis autem reiciendis dolorum?</p>
+        <p>Explicabo iusto voluptatum voluptas dignissimos recusandae eveniet quibusdam error fuga at tenetur, corrupti illo mollitia illum laudantium dolores dolor, similique modi dolorem non officia repellendus maiores reprehenderit ullam. Atque, at?</p>
+        <p>Aliquid esse consectetur praesentium reiciendis consequuntur atque molestias neque libero itaque, exercitationem possimus adipisci pariatur nihil voluptatum ipsam iste vero asperiores maxime fugiat omnis ex magnam. Assumenda enim sit nisi?</p>
+        <p>Ratione voluptate libero officia quas iure rerum accusamus illum alias nam cum veritatis, aspernatur numquam sunt! Deleniti cumque quidem nesciunt, tempore autem accusantium dolores cupiditate. Necessitatibus accusamus impedit quisquam nihil?</p>
+        <p>Dignissimos expedita fugiat corrupti atque fuga minima cumque laboriosam. Temporibus aperiam velit commodi perspiciatis dolor! Impedit non reiciendis aspernatur, officia sequi mollitia! Minus neque repudiandae nesciunt, ullam eveniet natus non?</p>
+        <p>Labore dolorum dicta consequatur impedit, repellendus debitis laborum quos, aspernatur perferendis assumenda tenetur molestias, tempore commodi? Enim amet hic reiciendis aperiam aspernatur, est, dignissimos debitis maxime harum aliquam ab nostrum.</p>
+        <p>Fugit eveniet, laboriosam labore ex minus quas pariatur nobis esse. Neque itaque temporibus officia facere impedit sequi facilis iusto dolor, rerum accusamus voluptates iure veniam praesentium labore. Odit, rerum fugit!</p>
+        <p>Adipisci dolores sequi corporis pariatur. Sed voluptatibus blanditiis dolores numquam tempora placeat rem! Repellat perspiciatis amet commodi officiis voluptatum, quasi temporibus exercitationem eligendi? Excepturi tenetur ullam consequatur eum molestiae placeat?</p>
+      </div>
+    </app-header-layout>
+
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class LayoutApp extends Polymer.Element {
+      static get is() { return 'layout-app'; }
+      
+    }
+
+    window.customElements.define(LayoutApp.is, LayoutApp);
+  </script>
+</dom-module>
